@@ -1,0 +1,647 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+/* Navbar styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: color 0.3s ease;
+    font-weight: bold; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Yellow hover color */
+    border-bottom: 4px solid #e0e0e0;
+    font-size: 105%
+}
+
+
+
+/* Home section styles */
+#home {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* VISIT [ARRAY] section styles */
+.home-content h2 {
+    font-size: 2em; 
+    margin-top: -10px; 
+}
+
+
+/* DISCOVER, DRIVE, DELIGHT, and Reserve Now button styles */
+.home-content h1 {
+    font-size: 3em; 
+    margin: 10px 0;
+}
+
+#reserve-button {
+    font-size: 1.5em; 
+    padding: 15px 30px;
+    background-color: #42a5f5; /* Blue background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeInButton 0.5s ease-in-out 2s forwards;
+}
+
+#reserve-button:hover {
+    background-color: #ffeb3b;
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        margin-top: 50px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 20px; 
+    }
+}
+/* CSS for the typing fade-in animation */
+#DISCOVER, #DRIVE, #DELIGHT {
+    overflow: hidden;
+    border-right: .15em solid #ffeb3b; /* Yellow color for cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffeb3b; } 
+  }
+
+/* Why Us section styles */
+#about {
+    background-color: #1565c0; /* Royal blue background color */
+    color: white;
+    padding: 80px 0; 
+}
+
+/* About content styles */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left side styles */
+.left-side-about {
+    max-width: 600px;
+    text-align: left; 
+}
+
+/* Right side styles */
+.right-side-about {
+    max-width: 600px;
+}
+
+/* Adjust the size of the YouTube video */
+.right-side-about iframe {
+    width: 200%; 
+    height: 400px; 
+}
+
+.about-content p {
+    opacity: 0.8;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* Why Bosnia section styles */
+
+#bosnia {
+    background-color: #1565c0; /* Royal blue background color */
+    color: white;
+    padding: 80px 0;
+}
+
+.bosnia-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left side styles */
+.left-side-bosnia {
+    max-width: 600px;
+    text-align: left; 
+    font-weight: bold;
+}
+
+/* Right side styles */
+.right-side-bosnia {
+    max-width: 600px;
+}
+
+/* Adjust the size of the photographs */
+.right-side-bosnia img {
+    width: 100%;
+    height: auto; 
+}
+
+
+.bosnia-content p {
+    opacity: 0.8;
+}
+
+/* Reserve section styles */
+#reserve {
+    background-color: #ffeb3b;
+    color: #1565c0; 
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* Reserve content styles */
+.reserve-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reserve header styles */
+.reserve-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Reserve buttons styles */
+#open-form-button, #open-choose-car-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em; 
+    padding: 15px 30px;
+    background-color: #1565c0;    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+#open-form-button:hover, #open-choose-car-button:hover {
+    background-color: #2196F3; /* Slightly lighter blue on hover */
+}
+
+
+#reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add this style for smooth opening animation */
+.popup-container-1 {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.popup-container-1.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+
+label[for="cross-border"] {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+
+.buttons-form button {
+    padding: 15px;
+    background-color: #42a5f5; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Gallery Styles */
+#gallery {
+    background-color: #f7f7f7; 
+    padding: 80px 0; 
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#gallery h1 {
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); 
+}
+
+
+/* Gallery Item Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Style for gallery images */
+.gallery-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on gallery images */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay Styles */
+.overlay-gallery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    width: 100%;
+}
+
+/* Overlay Styles on hover */
+.gallery-item:hover .overlay-gallery {
+    opacity: 1;
+}
+
+.overlay-gallery h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.overlay-gallery p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #1565c0; 
+    color: #fff; /* Text color for better contrast */
+    padding: 80px 0;
+}
+
+/* Contact Content Styles */
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side Styles */
+.left-side {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.left-side h1 {
+    font-size: 2em;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Social Media Links Styles */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #ffeb3b; 
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: white; 
+}
+
+/* Right side Styles */
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Map Styles */
+iframe {
+    border: 5px solid #fff; 
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Quick Links Styles */
+.quick-links {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.quick-links h3 {
+    font-size: 1.5em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.quick-links a:hover {
+    color: #2980b9;
+}
+
+/* Customer Testimonials Styles */
+.testimonials {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px
+}
+
+.testimonials h3 {
+    font-size: 1.5em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.testimonial .author {
+    font-style: italic;
+    font-size: 1.1em;
+    color: yellow;
+}
+
+/* Contact Message Section Styles */
+#contact-message {
+    background-color: #1565c0;     
+    padding: 80px 0;
+    color: #fff; 
+}
+
+.contact-message {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;     
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-message h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: #f39c12;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c; /* Red color for clear button */
+    margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoUnion - Car Rentals!</title>
+    <link rel="stylesheet" href="Project1_css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Why Us?</a></li>
+            <li><a href="#bosnia">Why Bosnia?</a></li>
+            <li><a href="#reserve">Reserve!</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <!-- Background Video -->
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="Files/Produce.mp4" type="video/mp4">
+        </video>
+        
+        <div class="home-content">
+            <h2> VISIT </h2>
+            <h2 id="cycle-array"> [ARRAY] </h2>
+            <h1 id="DISCOVER"> DISCOVER. </h1>
+            <h1 id="DRIVE"> DRIVE.    </h1>
+            <h1 id="DELIGHT"> DELIGHT.  </h1>
+
+            <!-- Reserve Now Button -->
+            <button type="button" id="reserve-button" onclick="scrollToReserve()">RESERVE NOW!</button>
+        </div>
+    </section>
+
+   <!-- Why Us Section -->
+   <section id="about">
+        <!-- About Content -->
+        <div class="about-content reveal">
+            <!-- Left side with text content -->
+            <div class="left-side-about">
+            <h1>Why AutoUnion?</h1>
+            <h2>Welcome to AutoUnion - Your Trusted Partner in Car Rental!</h2>
+            <h3>Over 30 Years of Expertise:</h3>
+            <p>AutoUnion takes pride in a rich legacy of over 30 years in the car rental industry. With decades of experience, we have honed our services to meet the diverse needs of our customers, ensuring a reliable and seamless car rental experience.</p>
+            <h3>Global Reach, Local Presence:</h3>
+            <p>Our extensive franchise network spans over 400 locations worldwide. Whether you're exploring the vibrant streets of Sarajevo, traversing the picturesque landscapes of Mostar, or embarking on a road trip to discover the hidden gems of Bosnia, AutoUnion is there to provide you with the perfect vehicle at your convenience.</p>
+            <h3>Explore Bosnia with Confidence:</h3>
+            <p>When you choose AutoUnion, you choose confidence in your travels. Our well-maintained fleet, coupled with our commitment to customer service, ensures that your journey through Bosnia is not only memorable but also worry-free. Let AutoUnion be your trusted companion on the road, making every mile an experience to cherish.</p>
+            <h3>Reserve Now and Let the Adventure Begin!</h3>
+            </div>
+
+            <!-- Right side with YouTube video -->
+            <div class="right-side-about">
+                <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=RqPbyRG-IW0" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Bosnia Section -->
+    <section id="bosnia">
+        <div class="bosnia-content">
+            <!-- Left side -->
+            <div class="left-side-bosnia">
+                <!-- Card 1 -->
+                <div class="cards">
+                    <h2 class="reveal">Beautiful Landscapes</h2>
+                    <p class="reveal">Embark on a journey through the captivating tapestry of Bosnia's natural wonders. <br><br> From the soaring peaks of the Dinaric Alps to the gentle meandering rivers like Una and Neretva, our rental cars provide you the freedom to traverse the diverse landscapes of this enchanting country.<br><br> Drive through serene countryside, where emerald-green meadows stretch endlessly, and charming villages whisper tales of a bygone era.<br><br> Explore historic landmarks seamlessly, from the medieval marvels of Mostar to the ancient beauty of Jajce. <br><br>AutoUnion is not just a car rental service; it's your key to unlocking the breathtaking beauty that Bosnia unfolds at every turn.</p>
+                    <br>
+                    <br>
+                    <!-- Card 2 -->
+                    <h2 class="reveal">Rich History</h2>
+                    <p class="reveal">Immerse yourself in the tapestry of Bosnia's cultural heritage with AutoUnion. <br><br> Journey through time as you explore ancient wonders like Sarajevo's Bascarsija and the medieval fortress of Pocitelj. <br><br> Drive to Mostar's heart to witness the iconic Stari Most bridge and the harmonious blend of Ottoman mosques and Austro-Hungarian churches. <br><br> Visit poignant sites, such as the War Childhood Museum and the Tunnel of Hope, embodying Bosnia's resilience during challenging times. <br><br> Feel the pulse of living traditions in towns where artisans preserve age-old crafts, adding depth to the cultural experience. <br><br></p>
+                    <br>
+                    <br>
+                    <!-- Card 3 -->
+                    <h2 class="reveal">Local Cuisine</h2>
+                    <p class="reveal">Indulge in the delightful tapestry of Bosnia's local cuisine with AutoUnion. <br><br> Let your taste buds journey through a symphony of traditional flavors, where every dish tells a story of heritage and culinary craftsmanship. <br><br> Drive to charming towns to savor handmade delights, whether it's the rich Bosnian coffee in Sarajevo's bustling cafes or the mouthwatering cevapi in Mostar's quaint eateries. <br><br> Traverse the winding streets of Sarajevo to experience the rich aromas of Bosnian coffee in bustling cafes, or drive to Mostar's charming eateries for a taste of the iconic cevapi that melts in your mouth. <br><br> </p>
+                    <br>
+                    <br>
+                    <!-- Card 4 -->
+                    <h2 class="reveal">Hospitality</h2>
+                    <p class="reveal">Immerse yourself in the genuine warmth and hospitality of the Bosnian people with AutoUnion.<br><br> Beyond being a car rental service, AutoUnion is your key to experiencing the heartfelt welcome that defines Bosnia and Herzegovina.<br><br> Drive through picturesque landscapes and charming towns, where the hospitality of the locals transforms every stop into a memorable encounter.<br><br> From cozy cafes in Sarajevo to family-run guesthouses in the countryside, every interaction is an invitation into the soul of Bosnian culture.<br><br> AutoUnion invites you to not just travel but to be embraced by the authentic hospitality that makes every moment of your stay in Bosnia a truly enriching experience. <br><br>Reserve now and let the genuine warmth of Bosnian hospitality accompany you on your journey.</p>
+                </div>
+            </div>
+
+            <!-- Right side with photographs -->
+            <div class="right-side-bosnia">
+                <!-- Photograph 1 -->
+                <img src="files/landscapes.jpg" alt="Beautiful Landscapes" class="reveal">
+                <!-- Photograph 2 -->
+                <img src="files/history.jpg" alt="Rich History" class="reveal">
+                <!-- Photograph 3 -->
+                <img src="files/cuisine.jpg" alt="Local Cuisine" class="reveal">
+                <!-- Photograph 4 -->
+                <img src="files/hospitality.jpg" alt="Hospitality" class="reveal">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserve Section -->
+    <section id="reserve">
+        <div class="reserve-content reveal">
+            <!-- Big Header -->
+            <h1>Reserve Your Car</h1>
+            <button id="open-form-button">Tell us what you need</button>
+        <div class ="popup-container-1" id="popup1">
+            <!-- Reservation Form -->
+             <form onsubmit="handleReservationFormSubmit(event)" id="reservation-form">
+                <!-- First Name -->
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <!-- Last Name -->
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <!-- Phone Number -->
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+
+                <!-- Email -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Arrival Date -->
+                <label for="arrival-date">Arrival Date:</label>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+
+                <!-- Arrival Time -->
+                <label for="arrival-time">Arrival Time:</label>
+                <input type="time" id="arrival-time" name="arrival-time" required>
+
+                <!-- Return Date -->
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date" required>
+
+                <!-- Return Time -->
+                <label for="return-time">Return Time:</label>
+                <input type="time" id="return-time" name="return-time" required>
+
+                <!-- Citizenship Dropdown -->
+                <label for="citizenship">Citizenship:</label>
+                <select id="citizenship" name="citizenship" required>
+                    <option value="" disabled selected>PICK ONE</option>
+                    <option value="bosnian">Bosnian</option>
+                    <option value="international">International</option>
+                </select>
+
+                <!-- Car Class Dropdown -->
+                <label for="car-category">Car Category:</label>
+                <select id="car-category" name="car-category" required>
+                    <option value="" disabled selected>PICK ONE</option>
+                    <option value="Economy">Economy</option>
+                    <option value="Compact">Compact</option>
+                    <option value="Compact SUV">Compact SUV</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Intermediate SUV">Intermediate SUV</option>
+                    <option value="Full-size SUV">Full-size SUV</option>
+                    <option value="Van">Van</option>
+                </select>
+
+                <!-- Crossing the Border Checkbox -->
+                <label>
+                    <input type="checkbox" id="cross-border" name="cross-border">
+                    Crossing the Border?
+                </label>
+
+                <!-- Submit and Clear Buttons -->
+                <div class="buttons-form">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+
+            <!-- The Modal-->
+            <h2>Or...</h2>
+            <button id="open-choose-car-button">Take a look at what's available!</button>
+
+            <!-- Car Availability Modal -->
+    <div class="modal" id="car-availability-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-car-availability-modal">&times;</span>
+            <h2>Available Cars</h2>
+        
+        <!-- Display available cars in a table -->
+        <table id="car-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>CAR CATEGORY</th>
+                    <th>AVAILABILITY</th>
+                </tr>
+            </thead>
+            <tbody id="car-table-body">
+                <!-- JSON here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+        </div>
+    </section>
+        </div>
+    </section>
+
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <div class="gallery-content reveal">
+        <!-- Gallery Title -->
+        <h1>Car Gallery</h1>
+
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <img src="Files/peugeot2008.jpg" alt="Car 1">
+                <div class="overlay-gallery">
+                    <h3>Peugeot 2008</h3>
+                </div>
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <img src="Files/SkodaKamiq.jpg" alt="Car 2">
+                <div class="overlay-gallery">
+                    <h3>Skoda Kamiq</h3>
+                </div>
+            </div>
+            
+            <!-- Image 3 -->
+            <div class="gallery-item">
+                <img src="Files/SkodaKaroq.webp" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Skoda Karoq</h3>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <img src="Files/SkodaOctavia.jpg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Skoda Octavia</h3>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="gallery-item">
+                <img src="Files/peugeot3008.jpg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Peugeot3008</h3>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="gallery-item">
+                <img src="Files/peugeot308.jpg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Peugeot 308</h3>
+                </div>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="gallery-item">
+                <img src="Files/peugeot208.jpg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Peugeot 208</h3>
+                </div>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="gallery-item">
+                <img src="Files/KiaRio.jpeg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Kia Rio</h3>
+                </div>
+            </div>
+            <!-- Image 9 -->
+            <div class="gallery-item">
+                <img src="Files/KiaStonic.jpg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Kia Stonic</h3>
+                </div>
+            </div>
+            <!-- Image 10 -->
+            <div class="gallery-item">
+                <img src="Files/SeatArona.webp" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Seat Arona</h3>
+                </div>
+            </div>
+            <!-- Image 11 -->
+            <div class="gallery-item">
+                <img src="Files/SeatIbiza.webp" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Seat Ibiza</h3>
+                </div>
+            </div>
+            <!-- Image 12 -->
+            <div class="gallery-item">
+                <img src="Files/CitroenC4.jpg" alt="Car 3">
+                <div class="overlay-gallery">
+                    <h3>Citroen C4</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact-content">
+        <!-- Left side with contact information -->
+        <div class="left-side">
+            <h1>Contact Us</h1>
+
+            <!-- Phone Number -->
+            <p><strong>Phone:</strong> +123 456 789</p>
+
+            <!-- Email -->
+            <p><strong>Email:</strong> info@autounion.com</p>
+
+            <!-- Social Media Links (replace with your actual links) -->
+            <p><strong>Follow us on:</strong></p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/autounion" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/autounion" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/autounion" target="_blank">Instagram</a></li>
+            </ul>
+
+            <!-- Quick Links -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#test">Rental Process</a></li>
+                    <li><a href="#test">Terms and Conditions</a></li>
+                    <li><a href="#test">FAQs</a></li>
+                    <li><a href="#test">Insurance</a></li>
+                    <li><a href="#test">AutoUnion Company</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Testimonials -->
+            <div class="testimonials">
+                <h3>What Our Customers Say</h3>
+                <div class="testimonial">
+                    <p>"Great service! The car was clean and ready to go. Will definitely rent again."</p>
+                    <p class="author">- John Doe</p>
+                    <p>"Smooth rental experience from start to finish. The staff was friendly, and the car was in excellent condition. Highly recommend!"</p>
+                    <p class="author">- Sara Smith</p>
+                    <p>"Outstanding service! The reservation process was easy, and the car exceeded my expectations. Clean, comfortable, and a pleasure to drive."</p>
+                    <p class="author">- Micheal Jordan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side with embedded Google Map -->
+        <div class="right-side">
+            <h3>Airport Office:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d571.1434390308611!2d18.336876529184632!3d43.827178175607266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sba!4v1701783436164!5m2!1sen!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Bascarsija Office:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d179.7991337607236!2d18.430443672906296!3d43.86027714034398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sba!4v1701783509035!5m2!1sen!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+    <!-- Contact Message Section -->
+    <section id="contact-message">
+        <div class="contact-message">
+            <h2>Send us a Message</h2>
+            <form onsubmit="handleSendMessageFormSubmit(event)" id="contact-form">
+                <!-- Name -->
+                <label for="contact-name">Your Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <!-- Email -->
+                <label for="contact-email">Your Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <!-- Message -->
+                <label for="send-message">Your Message:</label>
+                <textarea id="send-message" name="contact-message" rows="4" required></textarea>
+
+                <!-- Additional Message -->
+                <label for="additional-message">Additional Message:</label>
+                <textarea id="additional-message" name="additional-message" rows="4"></textarea>
+
+                <!-- Submit and Clear Buttons -->
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="Project1_js.js"></script>
+    
+</body>
+
+</html>
+
